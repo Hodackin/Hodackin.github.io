@@ -1,11 +1,5 @@
-$(document).ready(function(){
-  $('.slider_content').slick({
-    arrow: false,
-    dots: true,
-    adaptiveHeight: true,
-    infinite: false,
-    // variableWidth: true
-    // autoplay: true, автопрокрутка коних 3 сек
-    // centerMode: true, по центру
+$(document).ready(function() {
+  $('.header_burger').click(function(event) {
+    $('.header_burger, .header_menu, .logo').toggleClass('active');
   });
-});
+});//+ body

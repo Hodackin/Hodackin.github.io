@@ -10,6 +10,8 @@
 /* Лента слайдов */
 .slick-track {
   display: flex;
+  align-items: flex-start;
+
 }
 
 /* Слайд */
@@ -24,24 +26,42 @@
 /* Точки (булиты) */
 /* Активная точка */
 /* Элемент точки */
-.slider_content {
+/* .slider_content {
   position: relative;
   padding: 0 60px;
   min-width: 0;
+} */
+
+
+.slider_content .slick-slider{
+  display: flex;
+  justify-content: center;
+  /* width: 100%; */
 }
+
 .slider_content .slider_item {
   margin: 0 auto;
 }
+
 .slider_content .slider_item img {
-  object-fit: contain;
-  width: 1536px;
-  height: 576px;
+  /* object-fit: contain; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  margin: 0 auto;
 }
+
+
+
+
+
 .slider_content .slick-arrow {
   min-width: 0;
   position: absolute;
   top: 50%;
-  margin: -25px 0 0 0;
+  transform: translateY(-50%);
+  margin: +95px 0 0 0;
   z-index: 10;
   font-size: 0;
   width: 50px;
@@ -54,6 +74,7 @@
 .slider_content .slick-arrow.slick-prev {
   left: 0;
   background: url("../img/back.png") 0 0/100% no-repeat;
+  transform: translateY(-50%);
 }
 .slider_content .slick-arrow.slick-prev:focus {
   outline: none;
@@ -92,4 +113,29 @@
 }
 .slider_content .slick-dots button:focus {
   outline: none;
+}
+
+@media (max-width: 1024px) {
+  .slider_content .slider_item img {
+    width: 80%
+  }
+
+  .slider_content .slick-arrow {
+    margin: +45px 0  0  0;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider_content .slider_item img {
+    width: 100%
+  }
+
+  .slider_content .slick-arrow {
+    display: none;
+  }
+
+  .slider_content .slick-dots button {
+    width: 8px;
+    height: 8px;
+  }
 }

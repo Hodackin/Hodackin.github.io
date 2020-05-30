@@ -4,27 +4,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" type="text/css" href="css/fonts.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/slider.css">
-  <title></title>
+  <title>Сина під суд</title>
 </head>
 
 <body>
   <div class="main_wrapper">
-    <div class="header_wrapper">
-      <div class="container header">
-        <div class="logo">
-          <h1>LOGO</h1>
-        </div>
-        <div class="menu">
-          <ul>
-            <li><a href="#" class="menu_link">Про нас</a></li>
-            <li><a href="#" class="menu_link">Будівництво</a></li>
-            <li><a href="#" class="menu_link">Ціни</a></li>
-            <li><a href="#" class="menu_link">Контакти</a></li>
-          </ul>
+    <div id="0" class="header">
+      <div class="container">
+        <div class="header_body">
+          <div class="logo">
+            <a href="#0">
+              <img src="img/icons.png" alt="logo" width="180">
+            </a>
+          </div>
+          <div class="header_burger">
+            <span></span>
+          </div>
+          <nav id="menu_2" class="header_menu">
+            <ul class="header_list">
+              <li><a href="#3" class="header_link">Про нас</a></li>
+              <li><a href="#1" class="header_link">Будівництво</a></li>
+              <li><a href="#4" class="header_link">Ціни</a></li>
+              <li><a href="#2" class="header_link">Контакти</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
@@ -36,58 +41,80 @@
           <p class="bottom_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, pariatur!</p>
         </div>
       </section>
-      <section class="content_area_about light_bg">
+      <section id="3" class="content_advantage light_bg">
         <div class="container block_group">
           <div class="content_block">
             <div class="icon">
               <img src="img/house.png" alt="house icon">
             </div>
             <h2>Lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, minus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut natus excepturi ex architecto distinctio.</p>
           </div>
           <div class="content_block">
             <div class="icon">
               <img src="img/house.png" alt="house icon">
             </div>
             <h2>Lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit suscipit quis iure.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed rerum a tenetur optio nihil, incidunt.</p>
           </div>
           <div class="content_block">
             <div class="icon">
               <img src="img/house.png" alt="house icon">
             </div>
             <h2>Lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque sapiente, eligendi dolore soluta.</p>
           </div>
         </div>
       </section>
-      <section class="content_area_building dark_bg">
+      <section id="1" class="content_area_building grey_bg">
         <div class="content_title">
-          <!-- <h2>Pokaji Pisku</h2> -->
+          <h3 class="movie_title">
+            Lorem ipsum dolor
+          </h3>
+          <span></span>
+          <p class="movie_note">
+            Lorem ipsum dolor sit amet, consectetur
+          </p>
         </div>
-        <div class="slider_content">
-          <div class="slider_item">
-            <img src="img/slider/sl1.jpg" alt="slide">
-          </div>
-          <div class="slider_item">
-            <img src="img/slider/sl2.jpg" alt="slide">
-          </div>
-          <div class="slider_item">
-            <img src="img/slider/sl3.jpg" alt="slide">
-          </div>
-          <div class="slider_item">
-            <img src="img/slider/sl2.jpg" alt="slide">
-          </div>
-        </div>
-      </section>
-      <section class="content_area_video parallax  dark_bg" style="background-image: url('img/bg.jpg');">
-          <div class="future container">
-
-          </div>
-      </section>
-      <section class="footer_content_area light_bg">
         <div class="container">
-          <div class="contact_form">
+          <div class="movie_content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/r_VIOO69Pew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="2" class="content_about light_bg">
+        <div class="container">
+          <div class="about_title">
+            <h3 class="first">Lorem ipsum</h3>
+            <span></span>
+            <p class="second">Lorem ipsum dolor sit amet, consectetur.</p>
+          </div>
+          <div class="about_block">
+            <div class="description">
+              <div class="text_info">
+                <h1 class="title">Lorem ipsum</h1>
+                <span></span>
+                <p class="note">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus asperiores pariatur molestiae labore fugiat architecto quae omnis, numquam. Magni quo velit et quis nesciunt, ab at neque eligendi alias accusamus cum doloremque
+                  iste.
+                </p>
+              </div>
+              <button class="contact_button">
+                Контакти
+              </button>
+            </div>
+            <div class="photo">
+              <img src="img/slider/gl-1.jpg" width="420px" alt="about photo">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content_h parallax dark_bg" style="background-image: url('img/bg.jpg');">
+
+      </section>
+      <section id="4" class="footer_content_area light_bg">
+        <div class="container">
+          <div class="price_form">
             <form action="" class="form">
               <h2 class="form_title">Отримати прайс-лист</h2>
               <div class="form_group">
@@ -97,13 +124,15 @@
                 <input type="text" class="form_input" placeholder="Email">
               </div>
               <button class="form_button">
-                Надіслати
+                Отримати
               </button>
             </form>
           </div>
           <div class="footer">
             <div class="logo">
-              <h1>LOGO</h1>
+              <a href="#0">
+                <img src="img/icons.png" alt="logo" width="180">
+              </a>
             </div>
             <div class="contact_info">
               <h3>Контакти</h3>
