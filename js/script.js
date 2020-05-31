@@ -74,6 +74,8 @@ function login() {
 
   if (localStorage.getItem("token") == 1111) {
     window.location.href = "data.html";
+  } else {
+    alert("Invalid password");
   }
 };
 
@@ -89,7 +91,7 @@ function getContacts() {
         htmlText += "<div class='card'>" +
                     "<div class='info'>" +
                       "<div class='fname'>" +
-                        "<h3>"+ data[i]["name"] + ' ' + data[i]["surname"] + "</h3>" +
+                        "<h3>" + data[i]["name"] + ' ' + data[i]["surname"] + "</h3>" +
                       "</div>" +
                       "<div class='contact'>" +
                         "<div class='title'>" +
