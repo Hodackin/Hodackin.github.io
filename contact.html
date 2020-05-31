@@ -39,27 +39,27 @@
             <span></span>
             <form action="" class="form">
               <div class="form_group">
-                <input type="text" class="form_input" placeholder="Прізвище">
+                <input id="surname" type="text" class="form_input" placeholder="Прізвище">
               </div>
               <div class="form_group">
-                <input type="text" class="form_input" placeholder="Ім'я">
+                <input id="name" type="text" class="form_input" placeholder="Ім'я">
               </div>
               <div class="form_group">
-                <input type="text" class="form_input" placeholder="Номер мобільного телефону">
+                <input id="phone" type="text" class="form_input" placeholder="Номер мобільного телефону">
               </div>
               <div class="form_group">
-                <input type="text" class="form_input" placeholder="Адреса електронної скриньки">
+                <input id="email" type="text" class="form_input" placeholder="Адреса електронної скриньки">
               </div>
               <style>
                 textarea {
-                height: 150px;
-                resize: none;
+                  height: 150px;
+                  resize: none;
                 }
               </style>
               <div class="form_group">
-                <textarea class="text_area" rows="4" cols="30" placeholder="Додатково"></textarea>
+                <textarea id="note" class="text_area" rows="4" cols="30" placeholder="Додатково"></textarea>
               </div>
-              <button class="form_button">
+              <button class="form_button" onclick="sendContact(); return false;">
                 <h2>Надіслати</h2>
               </button>
             </form>
@@ -69,6 +69,7 @@
       </div>
     </section>
   </div>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

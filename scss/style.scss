@@ -543,7 +543,7 @@ ul {
           position: relative;
           margin-bottom: 20px;
 
-          .form_input{
+          .form_input {
             width: 100%;
             padding: 10px 8px;
             border: 1px solid;
@@ -604,13 +604,7 @@ ul {
     align-items: center;
   }
 }
-@media (max-width: 1000px) {}
 @media (max-width: 768px) {
-  // body {
-  //   &.active {
-  //     overflow-y:hidden;
-  //   }
-  // }
   .parallax.full_screen {
     height: 70vh;
   }
